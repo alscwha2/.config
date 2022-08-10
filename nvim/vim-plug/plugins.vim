@@ -15,7 +15,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     " Stable version of coc
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    "Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Surround
     Plug 'tpope/vim-surround'
     " For smooth scrolling
