@@ -22,4 +22,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'psliwka/vim-smoothie'
     " repeat
     Plug 'tpope/vim-repeat'
+    Plug 'tpope/vim-eunuch'
     call plug#end()
