@@ -1,0 +1,9 @@
+set surround
+set commentary
+set easymotion
+set clipboard=unnamedplus
+set number
+set relativenumber
+
+source ~/.config/nvim/keys/mappings.vim
+set ideajoin
