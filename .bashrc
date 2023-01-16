@@ -119,6 +119,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+# shopt settings
+shopt -s autocd
+
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.pyenv/bin:$PATH"
 alias bashrc="nvim $HOME/.config/.bashrc"
@@ -141,3 +145,8 @@ alias vimrc="nvim $MYVIMRC"
 alias thes="thesaurus"
 # export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 # export PATH="$JAVA_HOME/bin:$PATH"
+alias vimkeys="nvim $NVIM_HOME/keys/mappings.vim"
+alias vimset="nvim $NVIM_HOME/general/settings.vim"
+alias vimplug="nvim $NVIM_HOME/vim-plug/plugins.vim"
+alias ref="clear;neofetch"
+alias res="resource"
