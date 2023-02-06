@@ -47,9 +47,25 @@ nnoremap yY mz gg V G y `z
 nnoremap dD gg dG
 
 " alt j-k to easily move lines up and down
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
+" keep curosr in the middle of the page
+nnoremap j jzz
+nnoremap k kzz
+vnoremap j jzz
+vnoremap k kzz
+
+nnoremap { {zz
+nnoremap } }zz
+vnoremap { {zz
+vnoremap } }zz
+
+nnoremap <C-h> mz"_yiw?\v\w+\_W+%#<CR>:s/\v(%#\w+)(\_W+)(\w+)/\3\2\1/<CR><C-o><C-l>`z
+nnoremap <C-l> mz"_yiw:s/\v(%#\w+)(\_W+)(\w+)/\3\2\1/<CR><C-o>/\v\w+\_W+<CR><C-l>`z
+imap <C-h> <Esc><C-h>
+imap <C-l> <Esc><C-l>
