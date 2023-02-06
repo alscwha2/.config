@@ -123,6 +123,8 @@ fi
 # shopt settings
 shopt -s autocd
 
+set -o vi
+
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.pyenv/bin:$PATH"
 alias bashrc="nvim $HOME/.config/.bashrc"
@@ -148,5 +150,7 @@ alias thes="thesaurus"
 alias vimkeys="nvim $NVIM_HOME/keys/mappings.vim"
 alias vimset="nvim $NVIM_HOME/general/settings.vim"
 alias vimplug="nvim $NVIM_HOME/vim-plug/plugins.vim"
-alias ref="clear;neofetch"
+alias cls="clear;neofetch"
 alias res="resource"
+alias bon="bluetoothon"
+alias boff="bluetoothoff"
