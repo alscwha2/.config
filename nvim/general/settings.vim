@@ -29,6 +29,7 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
+" set scrolloff=8
 "set autochdir                           " Your working directory will always be the same as your working directory
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
@@ -36,7 +37,7 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 " You can't stop me
 cmap w!! w !sudo tee %
 
-set relativenumber
+"set relativenumber
 set tabstop=2
 set noexpandtab
 set colorcolumn=81
